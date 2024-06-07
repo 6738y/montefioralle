@@ -91,3 +91,6 @@ background-image: linear-gradient(              /*linear-gradient(  0deg,*/
  background-position: center center;
 }
 
+#hero h1{
+    color: white;
+}
