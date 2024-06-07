@@ -1,0 +1,93 @@
+*{box-sizing: border-box;/*hace que los elementos no crezcan mas alla del tamaño que o le di */}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* fuente*/
+    margin: 0;
+}
+
+/*modificar tamaño de letra*/
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}/*quito las viñetas de la lista*/
+li{font-size: 1.25em;}
+
+button{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px black;/*sombra*/
+    color: white;
+    background-color: black;
+}
+
+/*estilo para cuando el cursor este sobre el boton*/
+button:hover{
+    background-color: gainsboro;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+header .logoo{
+    margin: 0;
+    /*espaciado arriba abajo  costados*/
+            padding: 25px      30px;
+
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+
+}
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: blue;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;                                 /*vh medida relativa depende del tamaño del dispositivo*/
+    color: white;
+    
+    
+background-image: linear-gradient(              /*linear-gradient(  0deg,*/
+    0deg,                                      /*rgba(0,0,0,0.5),rgba(0,0,0,0.5),*/
+    rgba(0,0,0,0.5),                        /*pone una transparencia gris entre el fondo y la letra*/
+    rgba(0,0,0,0.5)
+)
+ ,url(imagenes/inicio.png);                   /*fondo del hero*/
+
+ background-repeat: no-repeat;              /*imagen no se repita como en cuadricula*/
+ background-size: cover;                    /*imagen ocupe todo el espacio */
+ background-position: center center;
+}
+
